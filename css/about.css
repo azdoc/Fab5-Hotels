@@ -1,0 +1,268 @@
+
+.aboutus_image img{
+	margin-top:50px;
+	width:100%;
+	height:70%;
+	
+	border: 1px solid #cc6699;
+    border-radius: 4px;
+    padding: 1%;
+  
+	
+}
+.Texton_image{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:200%;
+  text-shadow: 2px 2px #FF0000;
+
+  
+
+}
+.aboutFAB5{
+	margin-left:20%;
+	width:30%;
+	height:50%;
+	float:left;
+	background-color:#FF5722;
+	color:white;
+}
+
+#teamMembersImg{ 
+	width:40%;
+	height:50%;
+	position:relative;
+}
+
+#teamMembersImg img{
+  border: 5px solid #cc6699;
+  border-radius: 4px;
+  padding: 1%;
+  width: 80%;
+  height:80%;
+}
+
+#teamMembersImg img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.aboutteam h1{
+	text-shadow: 2px 2px #FF0000;
+	
+}
+.aboutcontainer {
+  position: relative;
+  width: 20%;
+  padding:0%; 
+}
+
+.aboutimage {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  float:right;
+  width: auto;
+  height: 30%;
+  padding:0.5%;
+}
+
+.aboutmiddle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.aboutcontainer:hover .aboutimage {
+  opacity: 0.3;
+}
+
+.aboutcontainer:hover .aboutmiddle {
+  opacity: 1;
+}
+.aboutimage{margin-bottom:2%;}
+.abouttext {
+  
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+#aboutservice{
+	
+	width:70%;
+	float:right;
+	background-color:#FF5722;
+	color:white;
+	font-size:17px;
+	
+}
+body{
+	background-color:#FF5722;
+}
+
+@media only screen and (max-width: 1190px){
+.aboutFAB5{
+	margin-left:20%;
+	width:30%;
+	height:30%;
+	font-size:19px;}
+#teamMembersImg{ 
+	width:30%;
+	height:30%;
+	position:relative;
+}
+.aboutcontainer {
+  position: relative;
+  width: 20%;
+}
+.aboutimage{
+	height:15%;
+}
+
+#aboutservice{
+	
+	width:70%;
+	float:right;
+	font-size:20px;
+}
+
+}
+@media (max-width: 959px){
+
+.aboutFAB5{
+	margin-left:10%;
+	width:40%;
+	height:30%;
+}
+#teamMembersImg{ 
+	width:40%;
+	height:30%;
+	position:relative;
+}
+#aboutservice{
+	
+	width:60%;
+	float:right;
+	font-size:17.5px;
+	
+}
+}
+@media (max-width: 767px){
+.aboutFAB5{
+	margin:0%;
+	width:50%;
+	height:30%;
+}
+#teamMembersImg{ 
+	width:50%;
+	height:30%;
+	position:relative;
+}
+#aboutservice{
+	
+	width:70%;
+	float:right;
+	font-size:17px;
+	
+}
+.abouttext {
+	font-size:11px;
+}
+}
+@media (max-width: 479px){
+	.aboutFAB5{
+	margin-left:0%;
+	width:50%;
+	height:20%;
+	font-size:12px;
+}
+#teamMembersImg{ 
+	width:50%;
+	height:20%;
+	position:relative;
+}
+#aboutservice{
+	
+	width:100%;
+	float:right;
+	font-size:14px;
+}
+.aboutcontainer {
+  
+  margin-bottom:50%;
+  width: 60%;
+  
+}
+.abouttext {
+	font-size:12.5px;
+}
+}
+@media only screen and (max-width:480px){
+	.aboutFAB5{
+	margin:0%;
+	width:50%;
+	height:30%;
+	font-size:14.5px;
+}
+#teamMembersImg{ 
+	width:50%;
+	height:30%;
+	position:relative;
+}
+#aboutservice{
+	
+	width:100%;
+	float:none;
+	font-size:17px;
+	
+}
+.aboutcontainer {
+  margin:20%;
+  width: 60%;
+  
+}
+
+.abouttext {
+	font-size:12px;
+}
+}
+
+	
+@media only screen and (max-width:375px){
+
+.aboutFAB5 {
+	width:100%;
+	height:20%;
+	font-size:16px;
+	float:none;
+}
+
+#teamMembersImg{ 
+	width:auto;
+	height:40%;
+	float:none;
+}
+#aboutservice{
+	
+	width:100%;
+	float:none;
+	font-size:10px;
+	
+}
+.aboutcontainer {
+  float:none;
+  width: 60%;
+}
+.abouttext {
+	font-size:10.5px;
+}
+}
+
+
+
+

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/superfish.css">
+	<link rel="stylesheet" href="css/cs-select.css">
+	<link rel="stylesheet" href="css/cs-skin-border.css">
+        <link rel="stylesheet" href="css/themify-icons.css">
+        <!-- Flat Icon -->
+        <link rel="stylesheet" href="css/flaticon.css">
+        <!-- Icomoon -->
+        <link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="css/header&footer.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="./css/jquery-ui-1.11.3.css">
+    <title>Home page</title>
+</head>
+<body>
+      <!--Nav menu starts-->
+      <nav>
+        <div class="logo">
+            <img src="images/logo.png" height="50px" width="100px" onclick="window.location.href='homepage.html'">
+        </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="./HomePage.html">Home</a>
+                </li>
+                <li>
+                    <a href="./booking.html">Booking</a>
+                </li>
+                <li>
+                    <a href="./Contactus.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="./aboutUs.html">About Us</a>
+                </li>
+                <li>
+                    <a href="./hotelBookingSystem.html">Gallery</a>
+                </li>
+            </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+   <!--Nav menu ends-->
+       <!--Banner starts-->
+    <section class="home">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('images/banner/banner1.jpg');">
+                <div class="container">
+                    <div class="caption">
+                        <h1>1.Best in class Luxury</h1>
+                        <p>The exterior, the reception, lounge and all other public areas<br> will have a beautiful and fancy design.</p>
+                        <a href="#">Click here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/banner/banner2.jpg');">
+                <div class="container">
+                    <div class="caption">
+                        <h1>2.Security</h1>
+                        <p>You feel safe with our hi-tech security</p>
+                        <a href="#">Click here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/banner/banner3.jpg');">
+                <div class="container">
+                    <div class="caption">
+                        <h1>3.Inhouse-Clubs</h1>
+                        <p>You can play all indoor , outdoor games with family</p>
+                        <a href="#">Click here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- controls  -->
+        <div class="controls">
+            <div class="prev"><</div>
+            <div class="next">></div>
+        </div>
+
+        <!-- indicators -->
+        <div class="indicator">
+        </div>
+    </section>
+       <!--Banner ends-->
+       <div class="wrap">
+		<div class="container">
+			<div class="row">
+				<div id="availability">
+					<form action="#">
+						<div class="a-col">
+							<section>
+                                <img src="images/logo.png" height="50px" width="100px">
+							</section>
+						</div>
+						<div class="a-col alternate">
+							<div class="input-field">
+								<label for="date-start">Check In</label>
+								<input type="text" class="form-control" id="date-start" />
+							</div>
+						</div>
+						<div class="a-col alternate">
+							<div class="input-field">
+								<label for="date-end">Check Out</label>
+								<input type="text" class="form-control" id="date-end" />
+							</div>
+						</div>
+						<div class="a-col action">
+							<a href="#" onclick='return check()'>
+								<span>Check</span>
+								Availability
+							</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+    <div id="featured-hotel" style="background-color: #E6E6E6;">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>Featured Hotels</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="feature-full-1col">
+					<div class="image" style="background-image: url(images/hotel_feture_1.jpg);">
+						<div class="descrip text-center">
+							<p><small>For as low as</small><span>$100/night</span></p>
+						</div>
+					</div>
+					<div class="desc">
+						<h3>Deluxe Hotel</h3>
+						<p>The Panoramic Hotel is a modern, elegant 4-star hotel overlooking the sea, perfect for a romantic, charming vacation, in the enchanting setting of Taormina and the Ionian Sea.The rooms at the Panoramic Hotel are new, well-lit and inviting. Our reception staff will be happy to help you during your stay in Taormina, suggesting itineraries, guided visits and some good restaurants in the historic centre.</p>
+						<p><a href="#" class="btn btn-primary btn-luxe-primary">Book Now <i class="ti-angle-right"></i></a></p>
+					</div>
+				</div>
+
+				<div class="feature-full-2col">
+					<div class="f-hotel">
+						<div class="image" style="background-image: url(images/hotel_feture_2.jpg);">
+							<div class="descrip text-center">
+								<p><small>For as low as</small><span>$99/night</span></p>
+							</div>
+						</div>
+						<div class="desc">
+							<h3>Hotel Venus</h3>
+							<p>The Venus Hotel is a modern, elegant 4-star hotel overlooking the sea, perfect for a romantic, charming vacation, in the enchanting setting of Taormina and the Ionian Sea.The rooms at the Panoramic Hotel are new, well-lit and inviting. Our reception staff will be happy to help you during your stay in Taormina, suggesting itineraries, guided visits and some good restaurants in the historic centre. </p>
+							<p><a href="#" class="btn btn-primary btn-luxe-primary">Book Now <i class="ti-angle-right"></i></a></p>
+						</div>
+					</div>
+					<div class="f-hotel">
+						<div class="image" style="background-image: url(images/hotel_feture_3.jpg);">
+							<div class="descrip text-center">
+								<p><small>For as low as</small><span>$99/night</span></p>
+							</div>
+						</div>
+						<div class="desc">
+							<h3>Hotel Mars</h3>
+							<p>The Mars Hotel is a modern, elegant 4-star hotel overlooking the sea, perfect for a romantic, charming vacation, in the enchanting setting of Taormina and the Ionian Sea.The rooms at the Panoramic Hotel are new, well-lit and inviting. Our reception staff will be happy to help you during your stay in Taormina, suggesting itineraries, guided visits and some good restaurants in the historic centre.</p>
+							<p><a href="#" class="btn btn-primary btn-luxe-primary">Book Now <i class="ti-angle-right"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+    </div>
+       <!--Testimonial starts-->
+       <div class="testimonial-slider">
+        <h1>READ WHAT CLIENTS HAVE TO SAY</h1>
+          <ul class="slider">
+            <li>
+              <div class="testimonial-slider-content">
+                <q>“If you’re looking for a top quality hotel look no further. We were upgraded free of charge to the Premium Suite, thanks so much”</q>
+                <p class="source">- Joe Smith</p>
+              </div>
+            </li>
+            <li>
+              <div class="testimonial-slider-content">
+                <q>Me and my wife had a delightful weekend get away here, the staff were so friendly and attentive. Highly Recommended</q>
+                <p class="source">- Arvinder Singh</p>
+              </div>
+            </li>
+            <li>
+              <div class="testimonial-slider-content">
+                <q>If you’re looking for a top quality hotel look no further. We were upgraded free of charge to the Premium Suite, thanks so much</q>
+                <p class="source">- Chris Graham</p>
+              </div>
+            </li>
+            <li>
+              <div class="testimonial-slider-content">
+                <q>I simply loved the kind of hospitality i recieved while i enjoy my stay in this lovely hotel</q>
+                <p class="source">- Guillermo</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--Testimonial ends-->
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>About Us</h2>
+                    <a href="#">Story</a>
+                    <a href="#">Awards</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Centre of Learning and Development</a>
+    
+                    <div class="links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                    <div class="copyright">
+                        <a href="#">@2020 Hotels & Resorts</a>
+                    </div>
+                </div>
+                <div class="footer-heading footer-2">
+                    <h2>News & Media</h2>
+                    <a href="#">The Magazine</a>
+                    <a href="#">Safety & Hygiene</a>
+                </div>
+                <div class="footer-heading footer-3">
+                    <h2>More</h2>
+                    <a href="#">Social Responsibility</a>
+                    <a href="#">Connections</a>
+                    <div class="logo">
+                        <img src="">
+                        <img src="">
+                        <img src="">
+                        <img src="">
+                    </div>
+                    <h3 style="margin-bottom: 1rem;">Subscribe</h3>
+                    <p>Discover the latest stories & inspirations from world, in your inbox </p>
+                    <input type="text" id="email" placeholder="Enter - email address">
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+        <script type='text/javascript'>
+            function check(){
+                var start=document.getElementById("date-start").value;
+                var end=document.getElementById("date-end").value;
+                 if (start=="" && end==""){
+                alert("Please select date from calender!");
+                return
+            }
+            else
+                { alert("Rooms are available! you can click on Booking for reservation");
+                return true;
+                }
+            }
+                
+        </script>
+    <script>
+        $(document).ready(function(){
+            var minDate=new Date();
+            $("#date-start").datepicker({
+                showAnim:'drop',
+                numberOfMonth:1,
+                minDate:minDate,
+                dateFormat:'dd/mm/yy',
+                onClose: function(selectedDate) {
+                    $("#date-end").datepicker("option","minDate",selectedDate);
+                }
+            });
+    
+            $("#date-end").datepicker({
+                showAnim:'drop',
+                numberOfMonth:1,
+                minDate:minDate,
+                dateFormat:'dd/mm/yy',
+                onClose: function(selectedDate) {
+                    $("#date-start").datepicker("option","maxDate",selectedDate);
+                    
+                }
+            });
+            datepicker:{
+                required:true;
+            }
+            datepicker:{
+                required: " * required: You must enter a  date";
+            }
+           
+        })
+    
+    </script>
+    <script src="./js/banner-script.js"></script>
+    <script src="./js/nav-menu.js"></script>
+</body>
+</html>

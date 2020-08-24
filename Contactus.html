@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script src="contactus_javascript.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+            <!--Nav menu starts-->
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" height="50px" width="100px" onclick="window.location.href='homepage.html'">
+                </div>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="./HomePage.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./booking.html">Booking</a>
+                        </li>
+                        <li>
+                            <a href="./Contactus.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="./aboutUs.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./hotelBookingSystem.html">Gallery</a>
+                        </li>
+                    </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+           <!--Nav menu ends-->
+    <!-- Contact us form containter -->
+    <div class="contact-container">
+        <div class="contactus">
+            <div class="image-map">
+                <!-- <img src="images/fab-5.jpg"> -->
+                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=lambton%20toronto&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+            </div>
+
+            <div class="address-content">
+                <h3>Address: </h3>
+                <div class="address-location">
+                    <p class="address">101 Queen Street STW On,
+                        <br>Brampton, Ontario L6Y3H1 Canada.
+                    </p>
+                </div>
+                <h3>Contact Us: </h3>
+                <p class="contact-no">647-989-7865</p>
+                <p class="contact-no">647-876-7862</p>
+                <h3>Email: </h3>
+                <p class="address">Fab-5@gmail.com</p>
+
+                <!-- suggestion div starts here -->
+                <div class="Suggestions-container">
+                    <div class="suggestion-div">
+                        <h3>Suggestions: </h3>
+                        <form class="form-horizontal" id="contact-form" name="suggestion_form" action="" method="" onclick="validatetextbox();">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="name">Name:</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                                    <span id="text"></span>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="email">Email:</label>
+                                <div class="col-sm-4">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                    <span id="email_error"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="remember"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="comment">Coment:</label>
+                                <div class="col-sm-4">
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <input type="submit" id="submit" value="Submit" onclick="submit()">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <!-- suggestion div ends here -->
+            </div>
+
+
+        </div>
+    </div>
+    <!-- footer div container starts -->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>About Us</h2>
+                <a href="#">Story</a>
+                <a href="#">Awards</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Centre of Learning and Development</a>
+                <div class="links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+                <div class="copyright">
+                    <a href="#">@2020 Hotels & Resorts</a>
+                </div>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>News & Media</h2>
+                <a href="#">The Magazine</a>
+                <a href="#">Safety & Hygiene</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>More</h2>
+                <a href="#">Social Responsibility</a>
+                <a href="#">Connections</a>
+                <h3 style="margin-bottom: 1rem;">Subscribe</h3>
+                <p id="discover">Discover the latest stories & inspirations from world, in your inbox </p>
+                <input type="text" id="email" placeholder="Enter - email address" required>
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </div>
+        <!-- footer container ends -->
+    </div>
+    <script src="./js/nav-menu.js"></script>
+    <script src="./js/contactus_javascript.js"></script>
+</body>
+</html>
